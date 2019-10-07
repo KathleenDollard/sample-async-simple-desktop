@@ -20,8 +20,7 @@ namespace SimpleAsync
 
         private async Task<int> LongOp()
         {
-            _display.DisplayText(
-                $"b. Before delay");
+            _display.DisplayText( $"b. Before delay");
             //Simulate a process that takes between 2 and 4 seconds to complete.
             var r = new Random();
             await Task.Delay(r.Next(2000, 4000));
